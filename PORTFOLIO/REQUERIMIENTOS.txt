@@ -1,9 +1,0 @@
-un inicio
-
-una pagina cv
-
-una pagina con nuestros proyectos
-
-y un form de contacto
-
-div class="col-12" bg-

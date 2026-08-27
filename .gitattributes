@@ -1,0 +1,11 @@
+# Normaliza los finales de linea al guardar en el repo.
+# Sin esto, editar en Windows marca archivos enteros como
+# modificados aunque no hayas cambiado una sola letra.
+* text=auto
+
+# Estos son binarios: git no debe tocarlos nunca
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
