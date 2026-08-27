@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+        <link href="css/estilos.css" rel="stylesheet">
+        <title>Contacto</title>
+    </head>
+    <body>
+    <!--- NAVEGADOR --->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="index.html">Esteban Chiabrando</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="sobre-mi.html">Sobre Mi</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="trabajos.html">Mis Trabajos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="mb-2">Contacto</h1>
+        <p class="text-body-secondary mb-5">Dejame tus datos y te escribo, o contactame vos directamente.</p>
+
+        <div class="row g-5">
+
+            <!--- COLUMNA IZQUIERDA: FORMULARIO --->
+            <div class="col-12 col-lg-7">
+                <h2 class="h4 mb-3">Dejame tus datos</h2>
+
+                <!-- maqueta, no envia de verdad todavia -->
+                <form id="formContacto" class="needs-validation" novalidate>
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            <div class="invalid-feedback">Poné tu nombre.</div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="vos@ejemplo.com" required>
+                            <div class="invalid-feedback">Ingresá un email válido.</div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="telefono" class="form-label">Teléfono <span class="text-body-secondary">(opcional)</span></label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="motivo" class="form-label">Motivo</label>
+                            <select class="form-select" id="motivo" name="motivo" required>
+                                <option value="" selected disabled>Elegí una opción...</option>
+                                <option>Propuesta laboral</option>
+                                <option>Trabajo freelance</option>
+                                <option>Consulta general</option>
+                                <option>Otro</option>
+                            </select>
+                            <div class="invalid-feedback">Elegí un motivo.</div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                            <div class="invalid-feedback">Escribime algo así sé de qué se trata.</div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="consentimiento" required>
+                                <label class="form-check-label" for="consentimiento">
+                                    Acepto que uses mis datos para responderme.
+                                </label>
+                                <div class="invalid-feedback">Necesito tu confirmación.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn-primary px-4" type="submit">Enviar mensaje</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Mensaje de exito (se muestra por JS al enviar) -->
+                <div id="formOk" class="alert alert-success mt-4 d-none" role="alert">
+                    <strong>¡Gracias!</strong> Recibí tu mensaje y te respondo a la brevedad.
+                </div>
+            </div>
+
+            <!--- COLUMNA DERECHA: MIS DATOS --->
+            <div class="col-12 col-lg-5">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h4 card-title mb-4">O contactame vos</h2>
+
+                        <div class="mb-4">
+                            <div class="text-body-secondary small text-uppercase">Email</div>
+                            <a class="fs-5 text-decoration-none" href="mailto:estebanchiabrando@gmail.com">estebanchiabrando@gmail.com</a>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-body-secondary small text-uppercase">Teléfono</div>
+                            <a class="fs-5 text-decoration-none" href="tel:+543472506285">3472 506285</a>
+                        </div>
+
+                        <hr>
+
+                        <p class="text-body-secondary mb-0 small">
+                            Respondo de lunes a viernes. Si es urgente, mejor por teléfono.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!--- FOOTER --->
+    <footer class="bg-body-tertiary border-top mt-auto">
+        <div class="container py-4">
+            <div class="row align-items-center g-3">
+
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <span class="text-body-secondary small">© 2026 Esteban Chiabrando</span>
+                </div>
+
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <a href="mailto:estebanchiabrando@gmail.com"
+                       class="text-body-secondary text-decoration-none">
+                        <i class="bi bi-envelope"></i> estebanchiabrando@gmail.com
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Validacion de Bootstrap: frena el envio si algun campo esta mal.
+        // Como todavia no hay backend, al validar bien solo mostramos el cartel de exito.
+        const form = document.getElementById('formContacto');
+        const ok = document.getElementById('formOk');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+                return;
+            }
+
+            form.classList.remove('was-validated');
+            form.reset();
+            ok.classList.remove('d-none');
+            ok.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+    </script>
+    </body>
+</html>

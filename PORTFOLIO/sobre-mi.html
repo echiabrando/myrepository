@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+        <link href="css/estilos.css" rel="stylesheet">
+        <title>Sobre mi</title>
+    </head>
+    <body>
+    <!--- NAVEGADOR --->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="index.html">Esteban Chiabrando</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="sobre-mi.html">Sobre Mi</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="trabajos.html">Mis Trabajos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+    <div class="container my-5">
+        <div class="row justify-content-center"> <!---esto centra la card---->
+            <div class="col-12 col-lg-10">
+                <div class="card shadow-sm">
+
+                    <!--- ENCABEZADO: foto + nombre + contacto --->
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row align-items-center g-4">
+
+                            <div class="col-12 col-sm-auto text-center">
+                            </div>
+
+                            <div class="col-12 col-sm text-center text-sm-start">
+                                <h1 class="h2 fw-bold mb-1">Esteban Chiabrando</h1>
+                                <!-- TODO: tu rol / puesto -->
+                                <p class="fs-5 text-body-secondary mb-3">Desarrollador Web</p>
+
+                                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-sm-start small">
+                                    <span class="text-body-secondary">
+                                        <i class="bi bi-envelope"></i> estebanchiabrando@gmail.com
+                                    </span>
+                                    <span class="text-body-secondary">
+                                        <i class="bi bi-telephone"></i> 3472 506285
+                                    </span>
+                                    <!-- TODO: tu ciudad -->
+                                    <span class="text-body-secondary">
+                                        <i class="bi bi-geo-alt"></i> Marcos Juárez,Córdoba
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-auto text-center">
+                                <a href="contacto.html" class="btn btn-primary">Contactame</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <hr class="m-0">
+
+                    <!--- CUERPO DEL CV --->
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row g-5">
+
+                            <!--- COLUMNA PRINCIPAL --->
+                            <div class="col-12 col-lg-8">
+
+
+                                <!-- EXPERIENCIA -->
+                                <section class="mb-5">
+                                    <h2 class="cv-titulo">Experiencia</h2>
+                                    <div class="cv-timeline">
+
+                                        <!-- TODO: completá cada experiencia.
+                                            Duplicá el bloque .cv-item para agregar más -->
+                                        <div class="cv-item">
+                                            <div class="cv-fecha">2024 — Actualidad</div>
+                                            <h3 class="h6 fw-bold mb-1">Puesto</h3>
+                                            <div class="small text-body-secondary mb-2">Empresa · Modalidad</div>
+                                            <p class="small text-body-secondary mb-0">
+                                                Qué hacías, con qué tecnologías y qué resultado
+                                                lograste. Una o dos líneas.
+                                            </p>
+                                        </div>
+                                        <div class="cv-item">
+                                            <div class="cv-fecha">2022 — 2023</div>
+                                            <h3 class="h6 fw-bold mb-1">Recruiter IT</h3>
+                                            <div class="small text-body-secondary mb-2">In Focus Recruitment Agency / Remoto</div>
+                                            <p class="small text-body-secondary mb-0">
+                                            Duties:
+                                            Scouting and approaching candidates,
+                                            Detailed reports,
+                                            Interviewer Spanish-English,
+                                            English level testing
+                                            </p>
+                                        </div>
+                                        <div class="cv-item">
+                                            <div class="cv-fecha"> 2021 — 2022</div>
+                                            <h3 class="h6 fw-bold mb-1">IT Assistant</h3>
+                                            <div class="small text-body-secondary mb-2">NohProblem Consulting / Part time Job</div>
+                                            <p class="small text-body-secondary mb-0">
+                                                Duties:
+                                                Inbound calling,
+                                                Customer Support,
+                                                Excel worksheets,
+                                                Problem solving,
+                                                Detailed reports
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </section>
+
+                                <!-- PROYECTOS -->
+                                <section class="mb-5 mb-lg-0">
+                                    <h2 class="cv-titulo">Proyectos</h2>
+                                    <div class="cv-timeline">
+
+                                        <div class="cv-item">
+                                            <div class="cv-fecha">Proyecto propio</div>
+                                            <h3 class="h6 fw-bold mb-1">Óptica Chiabrando</h3>
+                                            <p class="small text-body-secondary mb-0">
+                                                Software de gestión y organización de recetas para
+                                                una óptica. Permite el seguimiento de clientes y
+                                                mantiene backup ante imprevistos.
+                                            </p>
+                                        </div>
+
+                                        <div class="cv-item">
+                                            <div class="cv-fecha">Proyecto propio</div>
+                                            <h3 class="h6 fw-bold mb-1">Arquitecta SSG</h3>
+                                            <p class="small text-body-secondary mb-0">
+                                                Herramienta de asistencia para arquitectos: balances
+                                                personales y laborales, cálculo de honorarios y
+                                                cobro de proyectos.
+                                            </p>
+                                        </div>
+
+                                        <div class="cv-item">
+                                            <div class="cv-fecha">Proyecto propio (EN DESARROLLO)</div>
+                                            <h3 class="h6 fw-bold mb-1">Gimnasio MC</h3>
+                                            <p class="small text-body-secondary mb-0">
+                                                App de gimnasio con seguimiento de entrenamiento
+                                                personal y estadísticas de progreso, más métricas
+                                                de alumnos para el profesor y el dueño.
+                                            </p>
+                                        </div>
+                                        <div class="cv-item">
+                                            <div class="cv-fecha">Proyecto Propio (TESIS)</div>
+                                            <h3 class="h6 fw-bold mb-1">Edumetrics</h3>
+                                            <p class="small text-body-secondary mb-0">
+                                                Con mi compañero estamos desarrollando una app educativa, con
+                                                el objetivo de darle Herramientas a los profesores para llevar una mejor cursada.
+                                                Los profesores pueden organizar clases via esta app, actividades modulos y demas.
+                                                A cualquier nivel escolar brindandole herramientas tales como estadisticas,
+                                                asistencia de IA para a preparacion de clases, una IA que avisa y marca donde es que los 
+                                                alumnos estan fallando para reforzar.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </section>
+
+                            </div>
+
+                            <!--- COLUMNA LATERAL --->
+                            <div class="col-12 col-lg-4">
+
+                                <!-- TECNOLOGIAS -->
+                                <section class="mb-5">
+                                    <h2 class="cv-titulo">Tecnologías</h2>
+
+                                    <!-- ¡OJO! Los niveles y los años son de EJEMPLO.
+                                         Revisalos uno por uno antes de mostrar esto:
+                                         son datos tuyos y tienen que ser ciertos.
+
+                                         table-responsive  = si no entra, hace scroll
+                                                             horizontal solo en la tabla
+                                         thead / tbody     = separa encabezado de datos
+                                         scope="col"       = este th titula una COLUMNA
+                                         scope="row"       = este th titula una FILA
+                                         caption           = el titulo de la tabla -->
+                                    <div class="table-responsive">
+                                        <table class="table table-sm table-hover align-middle caption-top small mb-0">
+                                            <caption class="small pt-0">Nivel de dominio por tecnología</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Tecnología</th>
+                                                    <th scope="col">Nivel</th>
+                                                    <th scope="col" class="text-end">Años</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="fw-semibold">HTML</th>
+                                                    <td>Avanzado</td>
+                                                    <td class="text-end">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="fw-semibold">CSS</th>
+                                                    <td>Avanzado</td>
+                                                    <td class="text-end">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="fw-semibold">Bootstrap</th>
+                                                    <td>Intermedio</td>
+                                                    <td class="text-end">2</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="fw-semibold">JavaScript</th>
+                                                    <td>Intermedio</td>
+                                                    <td class="text-end">2</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="fw-semibold">Angular</th>
+                                                    <td>Básico</td>
+                                                    <td class="text-end">1</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="fw-semibold">Python</th>
+                                                    <td>Intermedio</td>
+                                                    <td class="text-end">2</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="fw-semibold">Django</th>
+                                                    <td>Básico</td>
+                                                    <td class="text-end">1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+
+                                <!-- FORMACION -->
+                                <section class="mb-5">
+                                    <h2 class="cv-titulo">Formación</h2>
+                                    <!-- TODO: tus estudios -->
+                                    <div class="mb-3">
+                                        <div class="cv-fecha">2023 — Actualidad</div>
+                                        <div class="fw-semibold small">Tecnicatura en Programacion</div>
+                                        <div class="small text-body-secondary">Institución UTN</div>
+                                    </div>
+                                    <div>
+                                        <div class="cv-fecha">2018</div>
+                                        <div class="fw-semibold small">Secundario</div>
+                                        <div class="small text-body-secondary">Instituto María Inmaculada , Marcos Juarez</div>
+                                    </div>
+                                </section>
+
+                                <!-- IDIOMAS -->
+                                <section class="mb-0">
+                                    <h2 class="cv-titulo">Idiomas</h2>
+                                    <!-- TODO: ajustá los niveles -->
+                                    <div class="d-flex justify-content-between small mb-1">
+                                        <span>Español</span>
+                                        <span class="text-body-secondary">Nativo</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between small">
+                                        <span>Inglés</span>
+                                        <span class="text-body-secondary">C1</span>
+                                    </div>
+                                </section>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!--- FOOTER --->
+    <footer class="bg-body-tertiary border-top mt-auto">
+        <div class="container py-4">
+            <div class="row align-items-center g-3">
+
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <span class="text-body-secondary small">© 2026 Esteban Chiabrando</span>
+                </div>
+
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <a href="mailto:estebanchiabrando@gmail.com"
+                       class="text-body-secondary text-decoration-none">
+                        <i class="bi bi-envelope"></i> estebanchiabrando@gmail.com
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

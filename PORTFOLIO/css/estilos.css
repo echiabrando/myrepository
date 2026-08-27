@@ -1,0 +1,279 @@
+/* Empuja el footer al fondo aunque la pagina
+   tenga poco contenido (sticky footer) */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body > main {
+    flex: 1;
+}
+
+/* La foto de perfil: cuadrada y recortada al
+   centro, no importa que imagen subas */
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+/* ============================================
+   PALETA: Carbon + Ambar
+   ============================================
+   Bootstrap 5.3 usa variables CSS, asi que
+   alcanza con pisarlas aca. No hace falta
+   recompilar Sass ni tocar el HTML.
+
+   #18181b  fondo
+   #27272a  superficies (nav, cards, footer)
+   #3f3f46  bordes
+   #fafafa  texto
+   #a1a1aa  texto secundario
+   #f59e0b  ACENTO (botones, links, activos)
+   ============================================ */
+
+[data-bs-theme="dark"] {
+    /* Fondo y texto */
+    --bs-body-bg: #18181b;
+    --bs-body-bg-rgb: 24, 24, 27;
+    --bs-body-color: #fafafa;
+    --bs-body-color-rgb: 250, 250, 250;
+    --bs-emphasis-color: #ffffff;
+
+    /* Superficies elevadas: nav, footer, cards.
+       Mas claras que el fondo = dan profundidad.
+       Las clases .bg-body-* usan la variante -rgb,
+       asi que hay que declarar las dos */
+    --bs-tertiary-bg: #27272a;
+    --bs-tertiary-bg-rgb: 39, 39, 42;
+    --bs-secondary-bg: #27272a;
+    --bs-secondary-bg-rgb: 39, 39, 42;
+
+    /* Texto secundario (.text-body-secondary) */
+    --bs-secondary-color: #a1a1aa;
+    --bs-tertiary-color: #71717a;
+
+    --bs-border-color: #3f3f46;
+    --bs-border-color-translucent: rgba(255, 255, 255, .12);
+
+    /* El acento */
+    --bs-primary: #f59e0b;
+    --bs-primary-rgb: 245, 158, 11;
+    --bs-link-color: #f59e0b;
+    --bs-link-color-rgb: 245, 158, 11;
+    --bs-link-hover-color: #fbbf24;
+
+    /* Anillo de foco al navegar con Tab */
+    --bs-focus-ring-color: rgba(245, 158, 11, .35);
+}
+
+/* --- NAVBAR --- */
+[data-bs-theme="dark"] .navbar {
+    --bs-navbar-color: #a1a1aa;
+    --bs-navbar-hover-color: #fafafa;
+    --bs-navbar-active-color: #f59e0b;
+    --bs-navbar-brand-color: #fafafa;
+    --bs-navbar-brand-hover-color: #f59e0b;
+}
+
+/* --- CARDS --- */
+/* El header un toque mas claro que el cuerpo,
+   para que se separe */
+[data-bs-theme="dark"] .card {
+    --bs-card-bg: #27272a;
+    --bs-card-cap-bg: #323238;
+    --bs-card-border-color: #3f3f46;
+}
+
+/* --- BOTON PRINCIPAL --- */
+/* btn-primary NO hereda de --bs-primary: trae sus
+   propios colores. Hay que pisarlos uno por uno */
+.btn-primary {
+    --bs-btn-bg: #f59e0b;
+    --bs-btn-border-color: #f59e0b;
+    --bs-btn-color: #18181b;
+    --bs-btn-hover-bg: #fbbf24;
+    --bs-btn-hover-border-color: #fbbf24;
+    --bs-btn-hover-color: #18181b;
+    --bs-btn-active-bg: #d97706;
+    --bs-btn-active-border-color: #d97706;
+    --bs-btn-active-color: #18181b;
+    --bs-btn-disabled-bg: #f59e0b;
+    --bs-btn-disabled-border-color: #f59e0b;
+    --bs-btn-disabled-color: #18181b;
+    --bs-btn-focus-shadow-rgb: 245, 158, 11;
+}
+
+/* --- BOTON SECUNDARIO --- */
+/* Texto claro con borde sutil, para que acompanie
+   al principal sin competirle */
+[data-bs-theme="dark"] .btn-outline-secondary {
+    --bs-btn-color: #fafafa;
+    --bs-btn-border-color: #3f3f46;
+    --bs-btn-hover-bg: #27272a;
+    --bs-btn-hover-border-color: #52525b;
+    --bs-btn-hover-color: #fafafa;
+    --bs-btn-active-bg: #3f3f46;
+    --bs-btn-active-border-color: #52525b;
+    --bs-btn-active-color: #fafafa;
+    --bs-btn-focus-shadow-rgb: 245, 158, 11;
+}
+
+/* --- ETIQUETAS DE TECNOLOGIAS --- */
+/* Ambar apagado: se leen sin gritar */
+.tag-tec {
+    background-color: #78350f;
+    color: #fde68a;
+    font-weight: 600;
+}
+
+/* --- FORMULARIO (contacto) --- */
+[data-bs-theme="dark"] .form-control,
+[data-bs-theme="dark"] .form-select {
+    background-color: #202023;
+    border-color: #3f3f46;
+    color: #fafafa;
+}
+
+[data-bs-theme="dark"] .form-control:focus,
+[data-bs-theme="dark"] .form-select:focus {
+    background-color: #202023;
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 .25rem rgba(245, 158, 11, .2);
+    color: #fafafa;
+}
+
+[data-bs-theme="dark"] .form-check-input:checked {
+    background-color: #f59e0b;
+    border-color: #f59e0b;
+}
+
+[data-bs-theme="dark"] .form-check-input:focus {
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 .25rem rgba(245, 158, 11, .2);
+}
+
+/* --- ACORDEON (trabajos) --- */
+[data-bs-theme="dark"] .accordion {
+    --bs-accordion-bg: #27272a;
+    --bs-accordion-border-color: #3f3f46;
+    --bs-accordion-btn-color: #fafafa;
+    --bs-accordion-active-bg: #323238;
+    --bs-accordion-active-color: #f59e0b;
+    --bs-accordion-btn-focus-border-color: #f59e0b;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 .25rem rgba(245, 158, 11, .2);
+}
+
+/* La flechita del acordeon viene azul de fabrica:
+   se la pintamos de ambar cuando esta abierto */
+[data-bs-theme="dark"] .accordion-button:not(.collapsed)::after {
+    filter: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f59e0b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* --- LINKS DEL FOOTER --- */
+/* Discretos en reposo, ambar al pasar el mouse */
+footer a.text-body-secondary:hover {
+    color: #f59e0b !important;
+}
+
+/* ============================================
+   CV (sobre-mi.html)
+   ============================================ */
+
+/* Foto chica del encabezado del CV */
+.cv-foto {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+}
+
+/* Titulo de cada seccion, con una barrita ambar
+   al costado para que se enganchen visualmente */
+.cv-titulo {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    padding-left: 10px;
+    border-left: 3px solid #f59e0b;
+    margin-bottom: 1rem;
+}
+
+/* Linea de tiempo: una linea vertical con puntos.
+   El ::before del contenedor es la linea, el del
+   item es el punto */
+.cv-timeline {
+    position: relative;
+    padding-left: 22px;
+}
+
+.cv-timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: var(--bs-border-color);
+}
+
+.cv-item {
+    position: relative;
+    padding-bottom: 1.4rem;
+}
+
+.cv-item:last-child {
+    padding-bottom: 0;
+}
+
+.cv-item::before {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #f59e0b;
+    /* El borde del color del fondo tapa la linea
+       y hace que el punto flote */
+    border: 2px solid var(--bs-body-bg);
+}
+
+/* Fecha del item: chica y en mayusculas */
+.cv-fecha {
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #f59e0b;
+}
+
+/* --- TABLAS --- */
+[data-bs-theme="dark"] .table {
+    --bs-table-color: var(--bs-body-color);
+    --bs-table-bg: transparent;
+    --bs-table-border-color: #3f3f46;
+    --bs-table-hover-bg: rgba(245, 158, 11, .07);
+    --bs-table-hover-color: var(--bs-body-color);
+}
+
+/* El encabezado en ambar, para que se lea como
+   encabezado y no como una fila mas */
+[data-bs-theme="dark"] .table > thead th {
+    color: #f59e0b;
+    font-size: .72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    border-bottom-color: #3f3f46;
+}
+
+/* --- SELECCION DE TEXTO --- */
+::selection {
+    background-color: rgba(245, 158, 11, .3);
+    color: #fafafa;
+}
