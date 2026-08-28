@@ -252,6 +252,24 @@ footer a.text-body-secondary:hover {
     color: #f59e0b;
 }
 
+/* --- CARRUSEL DE PROYECTOS --- */
+/* Altura fija para que no salte al cambiar de slide:
+   las capturas tienen proporciones distintas entre si.
+   'contain' muestra la captura entera (no la recorta,
+   que en un screenshot se comeria parte de la pantalla)
+   y el fondo rellena lo que sobra. */
+.carousel-item img {
+    height: 440px;
+    object-fit: contain;
+    background-color: #27272a;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 240px;
+    }
+}
+
 /* --- TABLAS --- */
 [data-bs-theme="dark"] .table {
     --bs-table-color: var(--bs-body-color);
