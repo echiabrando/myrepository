@@ -47,21 +47,21 @@
             <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 400'%3E%3Crect fill='%2327272a' width='1200' height='400'/%3E%3Ctext x='50%25' y='50%25' fill='%23a1a1aa' font-family='sans-serif' font-size='48' text-anchor='middle'%3EProyecto 1%3C/text%3E%3C/svg%3E" class="d-block w-100" alt="Proyecto 1">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Óptica Chiabrando</h5>
-                <p>Software de gestión y organización de recetas para una óptica. Permite el seguimiento de clientes y mantiene backup ante imprevistos.</p>
+                <p>Proyecto Particular</p>
             </div>
             </div>
             <div class="carousel-item">
             <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 400'%3E%3Crect fill='%2333333a' width='1200' height='400'/%3E%3Ctext x='50%25' y='50%25' fill='%23d4d4d8' font-family='sans-serif' font-size='48' text-anchor='middle'%3EProyecto 2%3C/text%3E%3C/svg%3E" class="d-block w-100" alt="Proyecto 2">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Arquitecta SSG</h5>
-                <p>Herramienta de asistencia para arquitectos: balances personales y laborales, cálculo de honorarios y cobro de proyectos.</p>
+                <p>Proyecto Particular</p>
             </div>
             </div>
             <div class="carousel-item">
             <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 400'%3E%3Crect fill='%233f3f46' width='1200' height='400'/%3E%3Ctext x='50%25' y='50%25' fill='%23fafafa' font-family='sans-serif' font-size='48' text-anchor='middle'%3EProyecto 3%3C/text%3E%3C/svg%3E" class="d-block w-100" alt="Proyecto 3">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Edumetrics</h5>
-                <p>Con mi compañero estamos desarrollando una app educativa, con el objetivo de darle Herramientas a los profesores para llevar una mejor cursada. Los profesores pueden organizar clases via esta app, actividades modulos y demas. A cualquier nivel escolar brindandole herramientas tales como estadisticas, asistencia de IA para a preparacion de clases, una IA que avisa y marca donde es que los alumnos estan fallando para reforzar.</p>
+                <p>Proyecto de Tesis</p>
             </div>
             </div>
         </div>
@@ -76,43 +76,82 @@
         </div>
 
     <div class="container my-5">
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-            Proyecto 1
-        </button>
-        </h2>
-        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-        <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    <div class="accordion" id="acordeonProyectos">
+
+        <!-- PROYECTO 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="cabecera-optica">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#detalle-optica" aria-expanded="true" aria-controls="detalle-optica">
+                Óptica Chiabrando
+            </button>
+            </h2>
+            <div id="detalle-optica" class="accordion-collapse collapse show" aria-labelledby="cabecera-optica" data-bs-parent="#acordeonProyectos">
+                <div class="accordion-body">
+                    <p>
+                        Software de gestión y organización de recetas para una óptica.
+                        Permite el seguimiento de los clientes y mantiene un backup
+                        ante cualquier imprevisto.
+                    </p>
+                    <!-- TODO: poné las tecnologías que usaste en este proyecto -->
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge tag-tec">Python</span>
+                        <span class="badge tag-tec">Django</span>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- PROYECTO 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="cabecera-arquitecta">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#detalle-arquitecta" aria-expanded="false" aria-controls="detalle-arquitecta">
+                Arquitecta SSG
+            </button>
+            </h2>
+            <div id="detalle-arquitecta" class="accordion-collapse collapse" aria-labelledby="cabecera-arquitecta" data-bs-parent="#acordeonProyectos">
+                <div class="accordion-body">
+                    <p>
+                        Herramienta de asistencia para arquitectos: balances personales
+                        y laborales, cálculo de honorarios y cobro de proyectos.
+                    </p>
+                    <!-- TODO: poné las tecnologías que usaste en este proyecto -->
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge tag-tec">Python</span>
+                        <span class="badge tag-tec">Django</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-            Proyecto 2
-        </button>
-        </h2>
-        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-        <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+        <!-- PROYECTO 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="cabecera-edumetrics">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#detalle-edumetrics" aria-expanded="false" aria-controls="detalle-edumetrics">
+                Edumetrics
+            </button>
+            </h2>
+            <div id="detalle-edumetrics" class="accordion-collapse collapse" aria-labelledby="cabecera-edumetrics" data-bs-parent="#acordeonProyectos">
+                <div class="accordion-body">
+                    <p>
+                        App educativa que estoy desarrollando junto a un compañero, con el
+                        objetivo de darle herramientas a los profesores para llevar una
+                        mejor cursada. Permite organizar clases, actividades y módulos en
+                        cualquier nivel escolar.
+                    </p>
+                    <p class="mb-3">
+                        Suma estadísticas de la cursada, asistencia de IA para preparar
+                        clases y un sistema que detecta dónde están fallando los alumnos
+                        para reforzar esos temas.
+                    </p>
+                    <!-- TODO: poné las tecnologías que usás en este proyecto -->
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge tag-tec">Angular</span>
+                        <span class="badge tag-tec">Python</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-            Proyecto 3
-        </button>
-        </h2>
-        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-        <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-        </div>
-    </div>
+
     </div>
     </div>
     </main>
